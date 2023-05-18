@@ -1,0 +1,35 @@
+[SERVIDOR]
+npm init -y = crea un proyecto de node
+npm i express socket.io cors morgan = instalar express, socket.io, cors y morgan
+npm i nodemon -D = modulo de desarrollo modulo (-D: especifica que sera una dependencia de desarrollo)
+
+
+dentro del package.json escribimos lo siguiente:
+    "type": "module"
+Con esta linea especificamos a node js que utilizaremos los modulos de ecmascript
+
+
+* express = framework de node
+* socket.io = es un modulo de node que nos permite poder comunicar el backend con el frontend,
+de tal forma que el backend puede enviar eventos al frontend. A esto se le conoce como comunicación bidireccional.
+* cors = modulo que nos permite comunicar distintos servidores
+* morgan = modulo que nos permite poder ver por consola las peticiones que van llegando
+
+
+
+
+[CLIENTE]
+
+Para crear la carpeta client se utilizara la forma
+    npx create-react-app client
+
+    * create-react-app: te permite crear aplicaciones de react de una forma rapida
+
+npm start: nos permite arrancar un servidor de desarrollo de react en el puerto 3000
+
+Debemos instalar la version de socket io para el frontend que va a permitir comunicarnos con el backend
+    * npm i socket.io-client
+
+
+
+[ENVIANDO ENVENTO DEL FRONTEND AL BACKEND Y QUE SE REPLIQUE EN EL RESTO DE CLIENTES]
